@@ -1,9 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
-
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0%;
+    padding: 0%;
     box-sizing: border-box;
     text-decoration: none;
     list-style:none;
@@ -44,7 +41,7 @@ body{
 
 .menu a{
     color:#fff;
-    padding: 10px 15px;
+    padding: 1rem 1.5rem;
     border-radius: 10px;
 }
 
@@ -55,7 +52,8 @@ body{
 .menu a:hover{
     background-color: aqua;
     color: #191c32;
-    transition:ease-in .4s ;
+    transition:all .4s  ease-in;
+
     
 }
 
@@ -107,12 +105,11 @@ h1{
 .about{
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    width: 100vw;
+    width: 100%;
     align-items: center;
     gap: 16px;
     background: rgb(92,232,255);
     background: linear-gradient(90deg, rgba(92,232,255,1) 47%, rgba(180,255,245,1) 100%);
-    color: black;
 }
 
 .about img{
@@ -122,4 +119,40 @@ h1{
 
 .about-info{
     grid-column: 5/10;
+    padding: 3rem;
 }
+
+.about-info h2{
+    font-size: 2em;
+    color: rgb(10,2,44);
+}
+
+.read-more{
+    padding: 10px 20px;
+    background-color:rgba(1, 162, 165, 0.6);
+    border: none;
+    border-radius: 20px;
+    margin-top: 15px;
+    cursor: pointer;
+    box-shadow: 5px 3px 12px -5px rgba(1, 162, 165, 0.6);
+}
+    
+.read-more:hover{
+    background-color: #fff;
+    box-shadow: none;
+}
+
+.divider{
+    height: 4px;
+    width: 60px ;
+    background-color: rgba(1, 162, 165, 0.6);
+    margin-top: 5px;
+    margin-bottom: 2em;
+}
+
+.about p{
+    margin-top:1rem ;
+}
+
+
+
