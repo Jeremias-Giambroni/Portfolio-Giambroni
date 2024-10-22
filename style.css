@@ -20,7 +20,7 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
-.wrapper, .portfolio{
+.wrapper{
     width: 100%;
     height: 100vh;
     background: var(--gradient);
@@ -70,8 +70,7 @@ body{
     width: 350px;
     height: auto;
     border: 7px solid aqua;
-
-    margin-left: 2rem;
+    margin-left: 25%;
     box-shadow: 1px 3px 12px -5px rgba(102, 231, 200, .69);
     
 }
@@ -112,6 +111,7 @@ h1{
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     width: 100%;
+    height: 100vh;
     align-items: center;
     gap: 16px;
     background: rgb(92,232,255);
@@ -120,6 +120,7 @@ h1{
 
 .about img{
     width:100%;
+    height: 100vh;
     grid-column: 1/5;
 }
 
@@ -168,39 +169,81 @@ h1{
     margin-top:1rem ;
 }
 
-.portfolio-headings{
-    width: 100%;
-    padding: 5em;
-}
-.portfolio-headings h2{
-    font-size: 2.5em;
+.portfolio,
+.contact-section {
+  width: 100%;
+  height: auto;
+  background: var(--gradient);
+  color: #fff;
+
 }
 
-.portfolio .container{
-    width: 80%;
-    height: 80vh;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.portfolio-heading {
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
 }
 
-.card{
-    width: 300px;
-    background-color: #2b3058;
+
+.portfolio-heading h2{
+  font-size: 2.5em;
+  color: #fff;
 }
-.card-img{
-    width: 100%;
-    height: 150px;
-    background-image: url(imagenes/2-original.png); 
-    background-size: cover; 
+
+.portfolio .container {
+  width: 80%;
+  height: 80vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.card-title{
-    padding:1.5rem;
+
+.card {
+  width: 300px;
+  background: var(--gradient);
+  margin: 1em;
 }
-.card_projects-links {
-    display: flex;
-    justify-content: space-evenly;
+
+.card__img {
+  width: 100%;
+  height: 150px;
+  background-image: url(https://res.cloudinary.com/freelancer2222222222222222/image/upload/v1650543491/samples/2-original_agisst.png);
+  background-size: cover;
 }
-.card_projects-links {
+
+.card__title {
+  padding: 20px;
+}
+
+.card__proyect-links {
+  display: flex;
+  justify-content: space-evenly;
+}
+.card__proyect-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.card__proyect-links i {
+  font-size: 1.5em;
+}
+
+
+.button-content {
+  display: flex;
+  justify-content: center;
+  margin: 1em;
+}
+
+.project-details-button a {
+  text-decoration: none;
+  color: #191c32;
+}
+
+
+
 
