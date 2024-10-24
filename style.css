@@ -359,7 +359,8 @@ footer h3{
     
 }
 
-footer ul{
+
+.sotial-network{
     display: flex;
     list-style: none;
     gap: 1rem;
@@ -375,13 +376,20 @@ footer ul li a {
         display: flex;
         flex-direction: column-reverse;
     }
-    .info-content-p{
+    .info-content-p, .download-cv{
         display: none;
     }
     .main img{
         width: min(70%, 350px)
     }
     .info-content .sotial-network{
-        display: block;
+        display: flex;
+        margin-top: 1rem;
+        
     }
+    .sotial-network li a{ 
+        color:#ddd;
+        padding: 1em ;
+    }
+    
 }
