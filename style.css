@@ -24,11 +24,6 @@ body{
   font-family: 'Montserrat', sans-serif;   
 }
 
-header{
-    background-image: var(--gradient);
-    color: #fff;
-}
-
 
 header{
   background:var(--gradient);
